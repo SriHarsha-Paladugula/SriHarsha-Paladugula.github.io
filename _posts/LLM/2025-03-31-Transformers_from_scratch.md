@@ -12,7 +12,7 @@ tags :  ["Deep Learning", "NLP", "Transformers", "LLM"]
 Recurrent Neural Network (RNN) is a type of neural network designed to handle sequential data. Unlike traditional feedforward neural networks, RNNs have connections that form cycles, allowing information to be passed from one step of the sequence to the next. This structure enables RNNs to maintain a memory of previous inputs, making them suitable for tasks where context over time is important (like time-series forecasting, language modeling, etc.).
 
 <div align="center">
-  <img src="../../assets/img/Tranformers_from_scratch/RNN_Image.webp" alt="RNN Architecture" />
+  <img src="/assets/img/Tranformers_from_scratch/RNN_Image.webp" alt="RNN Architecture" />
 </div>
 
 ### Basic Mechanism:
@@ -95,7 +95,7 @@ The idea behind attention is inspired by how humans process information: when we
 This is the basic transformer architecture
 
 <div align="center">
-  <img src="../../assets/img/Tranformers_from_scratch/Transformers_Architecture.webp" alt="Transformers Architecture" />
+  <img src="/assets/img/Tranformers_from_scratch/Transformers_Architecture.webp" alt="Transformers Architecture" />
 </div>
 
 It contains 2 macro-blocks:
@@ -109,7 +109,7 @@ Now we will focus each and every part of this architecture in detail to getter b
 ### Encoder
 
 <div align="center">
-  <img src="../../assets/img/Tranformers_from_scratch/Encoder.webp" alt="Encoder Architecture" />
+  <img src="/assets/img/Tranformers_from_scratch/Encoder.webp" alt="Encoder Architecture" />
 </div>
 
 These below are the different components of encoder
@@ -122,13 +122,13 @@ These below are the different components of encoder
 #### Input Embeddings
 
 <div align="center">
-  <img src="../../assets/img/Tranformers_from_scratch/Input_Embedding.webp" alt="Input Embedding" />
+  <img src="/assets/img/Tranformers_from_scratch/Input_Embedding.webp" alt="Input Embedding" />
 </div>
 
 Input embeddings are a way to convert raw data (like words, sentences, or other types of input) into numerical representations that machine learning models can understand. They map each item in the input (e.g., a word) to a vector of numbers, capturing semantic meaning or relationships based on patterns learned from large datasets. For example, in natural language processing (NLP), words with similar meanings have similar embeddings, allowing the model to recognize context and relationships between them.
 
 <div align="center">
-  <img src="../../assets/img/Tranformers_from_scratch/Input_Embedding_numbers.webp" alt="Input Embedding in real" />
+  <img src="/assets/img/Tranformers_from_scratch/Input_Embedding_numbers.webp" alt="Input Embedding in real" />
 </div>
 
 1. Tokenization: The first step in processing the sentence is tokenization. This involves breaking down the sentence into smaller pieces called tokens (which could be words, subwords, or characters, depending on the tokenizer). In this case, let's assume that the tokenizer assigns unique integer IDs to each word.
@@ -161,7 +161,7 @@ Need in Transformer Architecture:
 * Contextual Understanding: By incorporating position information, the model can learn the relationships between tokens that depend on their position in the sentence, which is crucial for tasks like translation, summarization, and question answering.
 
 <div align="center">
-  <img src="../../assets/img/Tranformers_from_scratch/positional_encoding.webp" alt="position encoding" />
+  <img src="/assets/img/Tranformers_from_scratch/positional_encoding.webp" alt="position encoding" />
 </div>
 
 We add a position embedding vector of size 512 to our original embedding. The values in the position encoding vector are calculated only once and reused for every sentence during training and inference.
@@ -173,7 +173,7 @@ Encoder input = Embedding + Position Embedding
 ##### How are position embeddings calculated?
 
 <div align="center">
-  <img src="../../assets/img/Tranformers_from_scratch/position_embedding.webp" alt="position encoding" />
+  <img src="/assets/img/Tranformers_from_scratch/position_embedding.webp" alt="position encoding" />
 </div>
 
 For even positions in the position embedding (count starts from 0), we use the 1st formula, and for odd positions in the position embeddings, we use the 2nd formula. We do this for each of the 512 (d model) values of a position embedding, for each word/token in the sentence.
@@ -187,5 +187,5 @@ Trigonometric functions like sin and cos naturally represent a pattern that the 
 #### Multi-head attention:
 
 <div align="center">
-  <img src="../../assets/img/Tranformers_from_scratch/Encoder.webp" alt="Encoder Architecture" />
+  <img src="/assets/img/Tranformers_from_scratch/Encoder.webp" alt="Encoder Architecture" />
 </div>
