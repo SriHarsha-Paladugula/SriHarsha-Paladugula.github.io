@@ -5,7 +5,6 @@ categories : ["Transformers", "LLM"]
 tags :  ["Deep Learning", "NLP", "Transformers", "Embeddings", "Positional Encoding"]
 ---
 
-# Transformers from Scratch - Part 2: Architecture and Embeddings
 
 In [Part 1]({% post_url 2025-04-01-Transformers-Part1-RNN-and-Attention %}), we explored RNNs and understood why we need attention. Now, let's dive into the Transformer architecture and understand how it prepares input data for processing.
 

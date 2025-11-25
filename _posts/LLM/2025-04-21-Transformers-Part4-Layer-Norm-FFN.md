@@ -5,8 +5,6 @@ categories : ["Transformers", "LLM"]
 tags :  ["Deep Learning", "NLP", "Transformers", "Layer Normalization", "Feed Forward"]
 ---
 
-# Transformers from Scratch - Part 4: Layer Norm and Feed-Forward Networks
-
 In [Part 3]({% post_url 2025-04-14-Transformers-Part3-Multi-Head-Attention %}), we explored the multi-head attention mechanism. Now let's understand the other crucial components that complete the encoder layer.
 
 ## Recap: The Encoder Layer

@@ -5,7 +5,6 @@ categories : ["Transformers", "LLM"]
 tags :  ["Deep Learning", "NLP", "Transformers", "Attention", "Multi-Head Attention"]
 ---
 
-# Transformers from Scratch - Part 3: Multi-Head Attention Mechanism
 
 In [Part 2]({% post_url 2025-04-07-Transformers-Part2-Architecture-Embeddings %}), we learned how Transformers convert text into meaningful embeddings with positional information. Now we'll explore the **heart of the Transformer**: the attention mechanism.
 
