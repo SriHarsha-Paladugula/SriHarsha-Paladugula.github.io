@@ -3,6 +3,7 @@ title : "Transformers from Scratch - Part 2: Architecture and Embeddings"
 date : 2025-04-07 14:00:00 +0800
 categories : ["Transformers", "LLM"]
 tags :  ["Deep Learning", "NLP", "Transformers", "Embeddings", "Positional Encoding"]
+math: true
 ---
 
 

@@ -3,6 +3,7 @@ title : "Transformers from Scratch - Part 5: The Decoder and Output Generation"
 date : 2025-04-28 14:00:00 +0800
 categories : ["Transformers", "LLM"]
 tags :  ["Deep Learning", "NLP", "Transformers", "Decoder", "Cross-Attention"]
+math: true
 ---
 
 In [Part 4]({% post_url 2025-04-21-Transformers-Part4-Layer-Norm-FFN %}), we completed our understanding of the encoder. Now let's explore the decoder—the component that generates output sequences.

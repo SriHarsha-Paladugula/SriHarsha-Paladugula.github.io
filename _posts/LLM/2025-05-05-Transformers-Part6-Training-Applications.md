@@ -3,6 +3,7 @@ title : "Transformers from Scratch - Part 6: Training and Applications"
 date : 2025-05-05 14:00:00 +0800
 categories : ["Transformers", "LLM"]
 tags :  ["Deep Learning", "NLP", "Transformers", "Training", "Applications"]
+math: true
 ---
 
 Welcome to the final part of our Transformers series! In parts [1]({% post_url 2025-04-01-Transformers-Part1-RNN-and-Attention %}) through [5]({% post_url 2025-04-28-Transformers-Part5-Decoder-Output %}), we've built the complete architecture. Now let's understand how to train it and where it's used.

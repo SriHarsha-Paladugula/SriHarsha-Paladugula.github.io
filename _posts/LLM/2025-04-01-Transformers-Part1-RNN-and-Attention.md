@@ -3,6 +3,7 @@ title : "Transformers from Scratch - Part 1: From RNNs to Attention"
 date : 2025-04-01 14:00:00 +0800
 categories : ["Transformers", "LLM"]
 tags :  ["Deep Learning", "NLP", "Transformers", "RNN", "Attention"]
+math: true
 ---
 
 Welcome to this comprehensive series on understanding Transformers from the ground up! In this first part, we'll explore the evolution from Recurrent Neural Networks (RNNs) to the attention mechanism that forms the foundation of Transformers.
