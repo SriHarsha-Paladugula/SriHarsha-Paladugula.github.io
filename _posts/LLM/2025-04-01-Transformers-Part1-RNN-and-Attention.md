@@ -1,6 +1,6 @@
 ---
 title : "Transformers from Scratch - Part 1: From RNNs to Attention"
-date : 2025-04-1 14:00:00 +0800
+date : 2025-04-01 14:00:00 +0800
 categories : ["Transformers", "LLM"]
 tags :  ["Deep Learning", "NLP", "Transformers", "RNN", "Attention"]
 ---
@@ -146,8 +146,8 @@ Stay tuned for Part 2, where we'll see how these concepts come together in the T
 
 **Series Navigation:**
 - **Part 1: From RNNs to Attention** (Current)
-- Part 2: Transformer Architecture Overview (Coming Next)
-- Part 3: Multi-Head Attention Deep Dive
-- Part 4: Encoder Components in Detail
-- Part 5: Decoder and Output Generation
-- Part 6: Training, Inference, and Applications
+- [Part 2: Architecture and Embeddings]({% post_url 2025-04-07-Transformers-Part2-Architecture-Embeddings %})
+- [Part 3: Multi-Head Attention Deep Dive]({% post_url 2025-04-14-Transformers-Part3-Multi-Head-Attention %})
+- [Part 4: Layer Norm and Feed-Forward Networks]({% post_url 2025-04-21-Transformers-Part4-Layer-Norm-FFN %})
+- [Part 5: Decoder and Output Generation]({% post_url 2025-04-28-Transformers-Part5-Decoder-Output %})
+- [Part 6: Training, Inference, and Applications]({% post_url 2025-05-05-Transformers-Part6-Training-Applications %})

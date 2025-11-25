@@ -7,7 +7,7 @@ tags :  ["Deep Learning", "NLP", "Transformers", "Attention", "Multi-Head Attent
 
 # Transformers from Scratch - Part 3: Multi-Head Attention Mechanism
 
-In [Part 2]({% post_url 2025-04-01-Transformers-Part2-Architecture-Embeddings %}), we learned how Transformers convert text into meaningful embeddings with positional information. Now we'll explore the **heart of the Transformer**: the attention mechanism.
+In [Part 2]({% post_url 2025-04-07-Transformers-Part2-Architecture-Embeddings %}), we learned how Transformers convert text into meaningful embeddings with positional information. Now we'll explore the **heart of the Transformer**: the attention mechanism.
 
 ## The Core Innovation
 
@@ -378,9 +378,9 @@ These components work together with attention to create the powerful encoder blo
 ---
 
 **Series Navigation:**
-- Part 1: From RNNs to Attention
-- Part 2: Architecture and Embeddings
+- [Part 1: From RNNs to Attention]({% post_url 2025-04-01-Transformers-Part1-RNN-and-Attention %})
+- [Part 2: Architecture and Embeddings]({% post_url 2025-04-07-Transformers-Part2-Architecture-Embeddings %})
 - **Part 3: Multi-Head Attention Deep Dive** (Current)
-- Part 4: Encoder Components in Detail (Coming Next)
-- Part 5: Decoder and Output Generation
-- Part 6: Training, Inference, and Applications
+- [Part 4: Layer Norm and Feed-Forward Networks]({% post_url 2025-04-21-Transformers-Part4-Layer-Norm-FFN %})
+- [Part 5: Decoder and Output Generation]({% post_url 2025-04-28-Transformers-Part5-Decoder-Output %})
+- [Part 6: Training, Inference, and Applications]({% post_url 2025-05-05-Transformers-Part6-Training-Applications %})

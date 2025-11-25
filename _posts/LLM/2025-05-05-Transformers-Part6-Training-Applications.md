@@ -7,7 +7,7 @@ tags :  ["Deep Learning", "NLP", "Transformers", "Training", "Applications"]
 
 # Transformers from Scratch - Part 6: Training and Applications
 
-Welcome to the final part of our Transformers series! In parts [1]({% post_url 2025-03-31-Transformers-Part1-RNN-and-Attention %}) through [5]({% post_url 2025-04-04-Transformers-Part5-Decoder-Output %}), we've built the complete architecture. Now let's understand how to train it and where it's used.
+Welcome to the final part of our Transformers series! In parts [1]({% post_url 2025-04-01-Transformers-Part1-RNN-and-Attention %}) through [5]({% post_url 2025-04-28-Transformers-Part5-Decoder-Output %}), we've built the complete architecture. Now let's understand how to train it and where it's used.
 
 ## Training vs Inference
 
@@ -538,11 +538,11 @@ Understanding Transformers deeply isn't just about knowing one architecture—it
 ## Series Complete! 🎉
 
 **Full Series Navigation:**
-- [Part 1: From RNNs to Attention]({% post_url 2025-03-31-Transformers-Part1-RNN-and-Attention %})
-- [Part 2: Architecture and Embeddings]({% post_url 2025-04-01-Transformers-Part2-Architecture-Embeddings %})
-- [Part 3: Multi-Head Attention Deep Dive]({% post_url 2025-04-02-Transformers-Part3-Multi-Head-Attention %})
-- [Part 4: Layer Norm and Feed-Forward Networks]({% post_url 2025-04-03-Transformers-Part4-Layer-Norm-FFN %})
-- [Part 5: Decoder and Output Generation]({% post_url 2025-04-04-Transformers-Part5-Decoder-Output %})
+- [Part 1: From RNNs to Attention]({% post_url 2025-04-01-Transformers-Part1-RNN-and-Attention %})
+- [Part 2: Architecture and Embeddings]({% post_url 2025-04-07-Transformers-Part2-Architecture-Embeddings %})
+- [Part 3: Multi-Head Attention Deep Dive]({% post_url 2025-04-14-Transformers-Part3-Multi-Head-Attention %})
+- [Part 4: Layer Norm and Feed-Forward Networks]({% post_url 2025-04-21-Transformers-Part4-Layer-Norm-FFN %})
+- [Part 5: Decoder and Output Generation]({% post_url 2025-04-28-Transformers-Part5-Decoder-Output %})
 - **Part 6: Training and Applications** (Current - Final)
 
 ### Further Reading

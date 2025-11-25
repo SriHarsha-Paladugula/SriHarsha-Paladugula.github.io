@@ -7,7 +7,7 @@ tags :  ["Deep Learning", "NLP", "Transformers", "Decoder", "Cross-Attention"]
 
 # Transformers from Scratch - Part 5: The Decoder and Output Generation
 
-In [Part 4]({% post_url 2025-04-03-Transformers-Part4-Layer-Norm-FFN %}), we completed our understanding of the encoder. Now let's explore the decoder—the component that generates output sequences.
+In [Part 4]({% post_url 2025-04-21-Transformers-Part4-Layer-Norm-FFN %}), we completed our understanding of the encoder. Now let's explore the decoder—the component that generates output sequences.
 
 ## The Decoder: Overview
 
@@ -462,9 +462,9 @@ We'll tie everything together and see how all the components work as a complete 
 ---
 
 **Series Navigation:**
-- Part 1: From RNNs to Attention
-- Part 2: Architecture and Embeddings
-- Part 3: Multi-Head Attention Deep Dive
-- Part 4: Layer Norm and Feed-Forward Networks
+- [Part 1: From RNNs to Attention]({% post_url 2025-04-01-Transformers-Part1-RNN-and-Attention %})
+- [Part 2: Architecture and Embeddings]({% post_url 2025-04-07-Transformers-Part2-Architecture-Embeddings %})
+- [Part 3: Multi-Head Attention Deep Dive]({% post_url 2025-04-14-Transformers-Part3-Multi-Head-Attention %})
+- [Part 4: Layer Norm and Feed-Forward Networks]({% post_url 2025-04-21-Transformers-Part4-Layer-Norm-FFN %})
 - **Part 5: Decoder and Output Generation** (Current)
-- Part 6: Training, Inference, and Applications (Coming Next - Final!)
+- [Part 6: Training, Inference, and Applications]({% post_url 2025-05-05-Transformers-Part6-Training-Applications %})

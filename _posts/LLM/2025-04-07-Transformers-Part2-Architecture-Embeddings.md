@@ -7,7 +7,7 @@ tags :  ["Deep Learning", "NLP", "Transformers", "Embeddings", "Positional Encod
 
 # Transformers from Scratch - Part 2: Architecture and Embeddings
 
-In [Part 1]({% post_url 2025-03-31-Transformers-Part1-RNN-and-Attention %}), we explored RNNs and understood why we need attention. Now, let's dive into the Transformer architecture and understand how it prepares input data for processing.
+In [Part 1]({% post_url 2025-04-01-Transformers-Part1-RNN-and-Attention %}), we explored RNNs and understood why we need attention. Now, let's dive into the Transformer architecture and understand how it prepares input data for processing.
 
 ## Transformer Architecture Overview
 
@@ -249,9 +249,9 @@ The embeddings we've created in this post will be transformed by the attention m
 ---
 
 **Series Navigation:**
-- Part 1: From RNNs to Attention
+- [Part 1: From RNNs to Attention]({% post_url 2025-04-01-Transformers-Part1-RNN-and-Attention %})
 - **Part 2: Architecture and Embeddings** (Current)
-- Part 3: Multi-Head Attention Deep Dive (Coming Next)
-- Part 4: Encoder Components in Detail
-- Part 5: Decoder and Output Generation
-- Part 6: Training, Inference, and Applications
+- [Part 3: Multi-Head Attention Deep Dive]({% post_url 2025-04-14-Transformers-Part3-Multi-Head-Attention %})
+- [Part 4: Layer Norm and Feed-Forward Networks]({% post_url 2025-04-21-Transformers-Part4-Layer-Norm-FFN %})
+- [Part 5: Decoder and Output Generation]({% post_url 2025-04-28-Transformers-Part5-Decoder-Output %})
+- [Part 6: Training, Inference, and Applications]({% post_url 2025-05-05-Transformers-Part6-Training-Applications %})

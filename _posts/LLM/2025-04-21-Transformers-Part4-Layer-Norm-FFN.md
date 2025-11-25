@@ -7,7 +7,7 @@ tags :  ["Deep Learning", "NLP", "Transformers", "Layer Normalization", "Feed Fo
 
 # Transformers from Scratch - Part 4: Layer Norm and Feed-Forward Networks
 
-In [Part 3]({% post_url 2025-04-02-Transformers-Part3-Multi-Head-Attention %}), we explored the multi-head attention mechanism. Now let's understand the other crucial components that complete the encoder layer.
+In [Part 3]({% post_url 2025-04-14-Transformers-Part3-Multi-Head-Attention %}), we explored the multi-head attention mechanism. Now let's understand the other crucial components that complete the encoder layer.
 
 ## Recap: The Encoder Layer
 
@@ -435,9 +435,9 @@ The decoder uses similar components but with key modifications to generate outpu
 ---
 
 **Series Navigation:**
-- Part 1: From RNNs to Attention
-- Part 2: Architecture and Embeddings
-- Part 3: Multi-Head Attention Deep Dive
+- [Part 1: From RNNs to Attention]({% post_url 2025-04-01-Transformers-Part1-RNN-and-Attention %})
+- [Part 2: Architecture and Embeddings]({% post_url 2025-04-07-Transformers-Part2-Architecture-Embeddings %})
+- [Part 3: Multi-Head Attention Deep Dive]({% post_url 2025-04-14-Transformers-Part3-Multi-Head-Attention %})
 - **Part 4: Layer Norm and Feed-Forward Networks** (Current)
-- Part 5: Decoder and Output Generation (Coming Next)
-- Part 6: Training, Inference, and Applications
+- [Part 5: Decoder and Output Generation]({% post_url 2025-04-28-Transformers-Part5-Decoder-Output %})
+- [Part 6: Training, Inference, and Applications]({% post_url 2025-05-05-Transformers-Part6-Training-Applications %})
