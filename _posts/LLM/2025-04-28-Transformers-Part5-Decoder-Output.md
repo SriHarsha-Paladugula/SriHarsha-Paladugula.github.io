@@ -55,13 +55,16 @@ This preserves the **autoregressive property**: predicting position $i$ depends 
 
 Create an upper triangular matrix of $-\infty$ values:
 
-$$\text{Mask} = \begin{bmatrix}
+$$
+\text{Mask} = \begin{bmatrix}
 0 & -\infty & -\infty & -\infty \\
 0 & 0 & -\infty & -\infty \\
 0 & 0 & 0 & -\infty \\
 0 & 0 & 0 & 0
-\end{bmatrix}$$
+\end{bmatrix}
+$$
 
+Where:
 - **0**: Allow attention (can see)
 - **$-\infty$**: Block attention (cannot see)
 
@@ -69,7 +72,9 @@ $$\text{Mask} = \begin{bmatrix}
 
 Before softmax, add the mask:
 
-$$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}} + \text{Mask}\right)V$$
+$$
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}} + \text{Mask}\right)V
+$$
 
 #### Step 3: Softmax Effect
 
