@@ -1,7 +1,7 @@
 ---
 title: "Neural Network Pruning Part 4: Advanced Techniques and Practical Applications"
 date: 2025-05-25 10:00:00 +0800
-categories: ["Efficient Deep Learning", "Model Efficiency"]
+categories: ["Efficient Deep Learning", "Pruning"]
 tags: ["Deep Learning", "Model Compression", "Pruning", "Neural Networks", "AutoML", "Production ML"]
 math: true
 ---

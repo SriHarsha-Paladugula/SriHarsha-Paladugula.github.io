@@ -1,7 +1,7 @@
 ---
 title: "Understanding GPU Memory Hierarchy: A Deep Dive into Modern Architecture"
 date: 2024-12-15 14:00:00 +0800
-categories: ["Efficient Deep Learning", "Model Efficiency"]
+categories: ["Efficient Deep Learning", "Model Efficiency Basics"]
 tags: ["Deep Learning", "GPU Architecture", "Memory Hierarchy", "Performance Optimization", "Hardware", "NVIDIA A100"]
 description: A comprehensive guide to GPU memory types, access patterns, and their impact on deep learning computations
 math: true

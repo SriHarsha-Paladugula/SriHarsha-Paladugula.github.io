@@ -1,7 +1,7 @@
 ---
 title: "Neural Network Pruning Part 3: Pruning Criteria"
 date: 2025-05-20 10:00:00 +0800
-categories: ["Efficient Deep Learning", "Model Efficiency"]
+categories: ["Efficient Deep Learning", "Pruning"]
 tags: ["Deep Learning", "Model Compression", "Pruning", "Neural Networks", "Pruning Criteria"]
 math: true
 ---

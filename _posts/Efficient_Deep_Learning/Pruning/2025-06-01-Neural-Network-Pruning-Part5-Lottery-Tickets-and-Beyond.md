@@ -1,7 +1,7 @@
 ---
 title: "Neural Network Pruning Part 5: Lottery Ticket Hypothesis and Training Sparse Networks"
 date: 2025-06-01 10:00:00 +0800
-categories: ["Efficient Deep Learning", "Model Efficiency"]
+categories: ["Efficient Deep Learning", "Pruning"]
 tags: ["Deep Learning", "Model Compression", "Pruning", "Neural Networks", "Lottery Ticket", "Sparse Training"]
 math: true
 ---

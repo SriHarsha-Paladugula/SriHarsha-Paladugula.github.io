@@ -1,7 +1,7 @@
 ---
 title: "Understanding Deep Learning Efficiency Metrics"
 date: 2024-11-13 13:00:00 +0800
-categories: ["Efficient Deep Learning", "Model Efficiency"]
+categories: ["Efficient Deep Learning", "Model Efficiency Basics"]
 tags: ["Deep Learning", "Efficiency Metrics", "Model Optimization", "Performance"]
 description: A comprehensive guide to measuring neural network efficiency across performance, memory, and computation
 image: /assets/img/Efficiency_metrics.png

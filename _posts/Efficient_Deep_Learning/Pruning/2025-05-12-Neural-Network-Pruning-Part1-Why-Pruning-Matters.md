@@ -1,7 +1,7 @@
 ---
 title: "Neural Network Pruning Part 1: Why Pruning Matters"
 date: 2025-05-12 10:00:00 +0800
-categories: ["Efficient Deep Learning", "Model Efficiency"]
+categories: ["Efficient Deep Learning", "Pruning"]
 tags: ["Deep Learning", "Model Compression", "Pruning", "Neural Networks", "Efficiency"]
 math: true
 ---
