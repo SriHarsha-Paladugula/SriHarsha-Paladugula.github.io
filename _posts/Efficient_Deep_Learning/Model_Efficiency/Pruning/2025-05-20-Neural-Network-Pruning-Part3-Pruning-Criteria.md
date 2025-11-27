@@ -8,7 +8,7 @@ math: true
 
 ## Recap: The Pattern is Set, But Which Weights?
 
-In [Part 2]({% post_url 2025-02-10-Neural-Network-Pruning-Part2-Pruning-Granularities %}), we learned about different pruning granularities—from fine-grained to structured. Now we face the critical question:
+In [Part 2]({% post_url 2025-05-15-Neural-Network-Pruning-Part2-Pruning-Granularities %}), we learned about different pruning granularities—from fine-grained to structured. Now we face the critical question:
 
 **Which specific weights, channels, or neurons should we remove?**
 
@@ -538,15 +538,15 @@ We now know **what pattern to prune** (granularity) and **which parameters to re
 - **How do we fine-tune the pruned network?**
 - **Can we automate the entire process?**
 
-In [Part 4]({% post_url 2025-02-24-Neural-Network-Pruning-Part4-Advanced-Techniques %}), we'll explore **advanced pruning techniques** including iterative pruning, automated pruning ratio search, and combining pruning with other compression methods.
+In [Part 4]({% post_url 2025-05-25-Neural-Network-Pruning-Part4-Advanced-Techniques %}), we'll explore **advanced pruning techniques** including iterative pruning, automated pruning ratio search, and combining pruning with other compression methods.
 
 ---
 
 **Series Navigation:**
-- [Part 1: Why Pruning Matters]({% post_url 2025-02-03-Neural-Network-Pruning-Part1-Why-Pruning-Matters %})
-- [Part 2: Pruning Granularities]({% post_url 2025-02-10-Neural-Network-Pruning-Part2-Pruning-Granularities %})
+- [Part 1: Why Pruning Matters]({% post_url 2025-05-12-Neural-Network-Pruning-Part1-Why-Pruning-Matters %})
+- [Part 2: Pruning Granularities]({% post_url 2025-05-15-Neural-Network-Pruning-Part2-Pruning-Granularities %})
 - **Part 3: Pruning Criteria** (Current)
-- [Part 4: Advanced Techniques]({% post_url 2025-02-24-Neural-Network-Pruning-Part4-Advanced-Techniques %})
+- [Part 4: Advanced Techniques]({% post_url 2025-05-25-Neural-Network-Pruning-Part4-Advanced-Techniques %})
 
 **References:**
 - [Optimal Brain Damage](https://proceedings.neurips.cc/paper/1989/file/6c9882bbac1c7093bd25041881277658-Paper.pdf) (LeCun et al., NeurIPS 1989)

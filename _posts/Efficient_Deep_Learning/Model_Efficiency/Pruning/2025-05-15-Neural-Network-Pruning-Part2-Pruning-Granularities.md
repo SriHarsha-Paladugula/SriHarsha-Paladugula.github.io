@@ -8,7 +8,7 @@ math: true
 
 ## Recap: Why Granularity Matters
 
-In [Part 1]({% post_url 2025-02-03-Neural-Network-Pruning-Part1-Why-Pruning-Matters %}), we learned that pruning can reduce model size by 3-12× without losing accuracy. But there's a catch: **not all pruning patterns are created equal**.
+In [Part 1]({% post_url 2025-05-12-Neural-Network-Pruning-Part1-Why-Pruning-Matters %}), we learned that pruning can reduce model size by 3-12× without losing accuracy. But there's a catch: **not all pruning patterns are created equal**.
 
 Imagine you're reorganizing a bookshelf:
 - **Option 1**: Remove random pages from random books (unstructured)
@@ -352,15 +352,15 @@ Let's see how different granularities affect ResNet-50:
 
 We've learned **what patterns to prune** in, but we haven't answered a crucial question: **Which specific weights or channels should we remove?**
 
-In [Part 3]({% post_url 2025-02-17-Neural-Network-Pruning-Part3-Pruning-Criteria %}), we'll explore **pruning criteria**—the methods that determine which parameters are important and which can be safely removed.
+In [Part 3]({% post_url 2025-05-20-Neural-Network-Pruning-Part3-Pruning-Criteria %}), we'll explore **pruning criteria**—the methods that determine which parameters are important and which can be safely removed.
 
 ---
 
 **Series Navigation:**
-- [Part 1: Why Pruning Matters]({% post_url 2025-02-03-Neural-Network-Pruning-Part1-Why-Pruning-Matters %})
+- [Part 1: Why Pruning Matters]({% post_url 2025-05-12-Neural-Network-Pruning-Part1-Why-Pruning-Matters %})
 - **Part 2: Pruning Granularities** (Current)
-- [Part 3: Pruning Criteria]({% post_url 2025-02-17-Neural-Network-Pruning-Part3-Pruning-Criteria %})
-- [Part 4: Advanced Techniques]({% post_url 2025-02-24-Neural-Network-Pruning-Part4-Advanced-Techniques %})
+- [Part 3: Pruning Criteria]({% post_url 2025-05-20-Neural-Network-Pruning-Part3-Pruning-Criteria %})
+- [Part 4: Advanced Techniques]({% post_url 2025-05-25-Neural-Network-Pruning-Part4-Advanced-Techniques %})
 
 **References:**
 - [Learning Both Weights and Connections for Efficient Neural Network](https://arxiv.org/abs/1506.02626) (Han et al., NeurIPS 2015)

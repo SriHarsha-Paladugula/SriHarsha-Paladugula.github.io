@@ -201,15 +201,15 @@ Now that we understand **why** pruning matters, the natural questions are:
 - **Which** connections should we remove?
 - **What** patterns of pruning work best?
 
-In [Part 2]({% post_url 2025-02-10-Neural-Network-Pruning-Part2-Pruning-Granularities %}), we'll explore different **pruning granularities**—from removing individual weights to entire channels—and understand the trade-offs between compression ratio and hardware efficiency.
+In [Part 2]({% post_url 2025-05-15-Neural-Network-Pruning-Part2-Pruning-Granularities %}), we'll explore different **pruning granularities**—from removing individual weights to entire channels—and understand the trade-offs between compression ratio and hardware efficiency.
 
 ---
 
 **Series Navigation:**
 - **Part 1: Why Pruning Matters** (Current)
-- [Part 2: Pruning Granularities]({% post_url 2025-02-10-Neural-Network-Pruning-Part2-Pruning-Granularities %})
-- [Part 3: Pruning Criteria]({% post_url 2025-02-17-Neural-Network-Pruning-Part3-Pruning-Criteria %})
-- [Part 4: Advanced Techniques]({% post_url 2025-02-24-Neural-Network-Pruning-Part4-Advanced-Techniques %})
+- [Part 2: Pruning Granularities]({% post_url 2025-05-15-Neural-Network-Pruning-Part2-Pruning-Granularities %})
+- [Part 3: Pruning Criteria]({% post_url 2025-05-20-Neural-Network-Pruning-Part3-Pruning-Criteria %})
+- [Part 4: Advanced Techniques]({% post_url 2025-05-25-Neural-Network-Pruning-Part4-Advanced-Techniques %})
 
 **References:**
 - [Learning Both Weights and Connections for Efficient Neural Network](https://arxiv.org/abs/1506.02626) (Han et al., NeurIPS 2015)

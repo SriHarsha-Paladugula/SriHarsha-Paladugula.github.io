@@ -10,9 +10,9 @@ math: true
 
 Throughout this series, we've built a comprehensive understanding of neural network pruning:
 
-- **[Part 1]({% post_url 2025-02-03-Neural-Network-Pruning-Part1-Why-Pruning-Matters %})**: Why pruning matters (model size explosion, energy costs)
-- **[Part 2]({% post_url 2025-02-10-Neural-Network-Pruning-Part2-Pruning-Granularities %})**: What patterns to prune (fine-grained, pattern-based, structured)
-- **[Part 3]({% post_url 2025-02-17-Neural-Network-Pruning-Part3-Pruning-Criteria %})**: Which parameters to remove (magnitude, scaling, second-order)
+- **[Part 1]({% post_url 2025-05-12-Neural-Network-Pruning-Part1-Why-Pruning-Matters %})**: Why pruning matters (model size explosion, energy costs)
+- **[Part 2]({% post_url 2025-05-15-Neural-Network-Pruning-Part2-Pruning-Granularities %})**: What patterns to prune (fine-grained, pattern-based, structured)
+- **[Part 3]({% post_url 2025-05-20-Neural-Network-Pruning-Part3-Pruning-Criteria %})**: Which parameters to remove (magnitude, scaling, second-order)
 
 Now we tackle the final pieces: **How much to prune, how to train pruned networks, and how to automate the entire process.**
 
@@ -606,9 +606,9 @@ Neural network pruning is a powerful tool for making deep learning models effici
 ---
 
 **Series Navigation:**
-- [Part 1: Why Pruning Matters]({% post_url 2025-02-03-Neural-Network-Pruning-Part1-Why-Pruning-Matters %})
-- [Part 2: Pruning Granularities]({% post_url 2025-02-10-Neural-Network-Pruning-Part2-Pruning-Granularities %})
-- [Part 3: Pruning Criteria]({% post_url 2025-02-17-Neural-Network-Pruning-Part3-Pruning-Criteria %})
+- [Part 1: Why Pruning Matters]({% post_url 2025-05-12-Neural-Network-Pruning-Part1-Why-Pruning-Matters %})
+- [Part 2: Pruning Granularities]({% post_url 2025-05-15-Neural-Network-Pruning-Part2-Pruning-Granularities %})
+- [Part 3: Pruning Criteria]({% post_url 2025-05-20-Neural-Network-Pruning-Part3-Pruning-Criteria %})
 - **Part 4: Advanced Techniques** (Current)
 
 **Further Resources:**
