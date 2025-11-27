@@ -1,7 +1,7 @@
 ---
 title: "Efficiency Metrics Part 3: Computation Metrics (MACs and FLOPs)"
 date: 2024-11-19 10:00:00 +0530
-categories: ["Efficient_Deep_Learning", "Model_Efficiency_Basics"]
+categories: ["Efficient Deep Learning", "Model Efficiency Basics"]
 tags: ["Deep Learning", "Model Efficiency", "MACs", "FLOPs", "Optimization", "Neural Networks"]
 description: "Understand MACs and FLOPs - the fundamental computation metrics for measuring neural network complexity. Learn formulas, layer-wise calculations, and how to compare model efficiency."
 math: true

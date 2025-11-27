@@ -1,7 +1,7 @@
 ---
 title : Why Do We Need Efficient Deep Learning Computing?
 date : 2024-11-12 14:00:00 +0800
-categories : ["Model Efficiency Basics"]
+categories : ["Efficient Deep Learning", "Model Efficiency Basics"]
 tags :  ["Model Efficiency"]
 description: Efficient deep learning computing speeds training, reduces costs, and enhances scalability
 image: /assets/img/Efficiency_Metrics/three_pillars.png
