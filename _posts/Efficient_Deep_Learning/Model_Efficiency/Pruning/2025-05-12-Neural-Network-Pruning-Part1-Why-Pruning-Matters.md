@@ -122,11 +122,11 @@ Memory access is **incredibly expensive** in terms of energy:
 
 ### 3. **Practical Benefits**
 
-✅ **Faster Inference**: Fewer operations mean faster predictions  
-✅ **Lower Latency**: Critical for real-time applications  
-✅ **Reduced Storage**: Easier model deployment and updates  
-✅ **Better Accessibility**: Run powerful models on edge devices  
-✅ **Cost Savings**: Fewer GPUs needed for serving models  
+**Faster Inference**: Fewer operations mean faster predictions  
+**Lower Latency**: Critical for real-time applications  
+**Reduced Storage**: Easier model deployment and updates  
+**Better Accessibility**: Run powerful models on edge devices  
+**Cost Savings**: Fewer GPUs needed for serving models  
 
 ## How Effective is Pruning?
 
@@ -163,11 +163,11 @@ This means we can make AlexNet **9× smaller** while keeping the same accuracy o
 
 Let's clarify some misconceptions:
 
-❌ **Not about reducing model architecture complexity** (like switching from ResNet-50 to MobileNet)  
-❌ **Not about quantization** (using lower precision like INT8 instead of FP32)  
-❌ **Not about knowledge distillation** (training a smaller model to mimic a larger one)  
+**Not about reducing model architecture complexity** (like switching from ResNet-50 to MobileNet)  
+**Not about quantization** (using lower precision like INT8 instead of FP32)  
+**Not about knowledge distillation** (training a smaller model to mimic a larger one)  
 
-✅ **IS about selectively removing parameters from an existing, trained model**
+**IS about selectively removing parameters from an existing, trained model**
 
 ## Real-World Applications
 
@@ -212,6 +212,7 @@ In [Part 2]({% post_url 2025-05-15-Neural-Network-Pruning-Part2-Pruning-Granular
 - [Part 4: Advanced Techniques]({% post_url 2025-05-25-Neural-Network-Pruning-Part4-Advanced-Techniques %})
 
 **References:**
+- [MIT 6.5940: TinyML and Efficient Deep Learning (Fall 2024)](https://hanlab.mit.edu/courses/2024-fall-65940)
 - [Learning Both Weights and Connections for Efficient Neural Network](https://arxiv.org/abs/1506.02626) (Han et al., NeurIPS 2015)
 - [Computing's Energy Problem (and What We Can Do About it)](https://ieeexplore.ieee.org/document/6757323) (Horowitz, IEEE ISSCC 2014)
 - [Model Compression and Hardware Acceleration: A Comprehensive Survey](https://ieeexplore.ieee.org/document/9043731) (Deng et al., IEEE 2020)

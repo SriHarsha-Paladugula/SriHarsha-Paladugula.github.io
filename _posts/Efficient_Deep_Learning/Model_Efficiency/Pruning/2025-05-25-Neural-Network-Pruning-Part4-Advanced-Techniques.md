@@ -182,12 +182,12 @@ fine_tune(model, lr_schedule=original_schedule[epoch_E:], epochs=5)
 **One-shot 90% pruning:**
 - Accuracy drop: 15%
 - Fine-tuning recovers: 8%
-- Final accuracy loss: **7%** ❌
+- Final accuracy loss: **7%**
 
 **Iterative 90% pruning (9 iterations of 10%):**
 - Accuracy drop per iteration: ~2%
 - Fine-tuning recovers: 1.5%
-- Cumulative effect: **<1% final loss** ✅
+- Cumulative effect: **<1% final loss**
 
 ## Automated Pruning: AutoML for Compression
 
@@ -612,6 +612,7 @@ Neural network pruning is a powerful tool for making deep learning models effici
 - **Part 4: Advanced Techniques** (Current)
 
 **Further Resources:**
+- [MIT 6.5940: TinyML and Efficient Deep Learning (Fall 2024)](https://hanlab.mit.edu/courses/2024-fall-65940)
 - [Original Pruning Paper (Han et al., NeurIPS 2015)](https://arxiv.org/abs/1506.02626)
 - [AMC: AutoML for Model Compression](https://arxiv.org/abs/1802.03494)
 - [Lottery Ticket Hypothesis](https://arxiv.org/abs/1803.03635)

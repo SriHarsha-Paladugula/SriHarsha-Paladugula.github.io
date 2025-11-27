@@ -75,15 +75,15 @@ Notice how zeros appear **irregularly** throughout the matrix.
 ### Pros and Cons
 
 **Advantages:**
-✅ **Maximum flexibility** in choosing which weights to prune  
-✅ **Highest compression ratios** (9-12× for AlexNet, VGG-16)  
-✅ **Can capture subtle patterns** of weight importance  
+**Maximum flexibility** in choosing which weights to prune  
+**Highest compression ratios** (9-12× for AlexNet, VGG-16)  
+**Can capture subtle patterns** of weight importance  
 
 **Disadvantages:**
-❌ **Irregular memory access patterns** slow down computation  
-❌ **No speedup on standard GPUs** without special sparse libraries  
-❌ **Requires custom hardware** (like EIE accelerator) for real speedup  
-❌ **Overhead from storing sparse indices**  
+**Irregular memory access patterns** slow down computation  
+**No speedup on standard GPUs** without special sparse libraries  
+**Requires custom hardware** (like EIE accelerator) for real speedup  
+**Overhead from storing sparse indices**  
 
 ### Where It Shines
 
@@ -134,16 +134,16 @@ Let's see a concrete example:
 ### Pros and Cons
 
 **Advantages:**
-✅ **Hardware acceleration** on NVIDIA Ampere GPUs (~2× speedup)  
-✅ **Predictable memory access patterns**  
-✅ **Good compression** (50% sparsity guaranteed)  
-✅ **Maintains accuracy** on most tasks  
-✅ **Easy to implement** with simple masking  
+**Hardware acceleration** on NVIDIA Ampere GPUs (~2× speedup)  
+**Predictable memory access patterns**  
+**Good compression** (50% sparsity guaranteed)  
+**Maintains accuracy** on most tasks  
+**Easy to implement** with simple masking  
 
 **Disadvantages:**
-❌ **Less flexible** than fine-grained pruning  
-❌ **Fixed 50% sparsity** (can't go higher without custom patterns)  
-❌ **Requires retraining** to adapt to the constraint  
+**Less flexible** than fine-grained pruning  
+**Fixed 50% sparsity** (can't go higher without custom patterns)  
+**Requires retraining** to adapt to the constraint  
 
 ### Real-World Performance
 
@@ -256,17 +256,17 @@ Layer 2: 50% pruned
 ### Pros and Cons of Structured Pruning
 
 **Advantages:**
-✅ **Direct speedup** on any hardware (GPU, CPU, mobile)  
-✅ **No special libraries** or hardware needed  
-✅ **Clean, regular structure** makes deployment easy  
-✅ **Reduced memory bandwidth** requirements  
-✅ **Compatible with quantization** and other techniques  
+**Direct speedup** on any hardware (GPU, CPU, mobile)  
+**No special libraries** or hardware needed  
+**Clean, regular structure** makes deployment easy  
+**Reduced memory bandwidth** requirements  
+**Compatible with quantization** and other techniques  
 
 **Disadvantages:**
-❌ **Lower compression ratios** (typically 2-5×)  
-❌ **Less flexible** in choosing what to prune  
-❌ **May require more careful tuning** to maintain accuracy  
-❌ **Coarser granularity** means less ability to capture fine-grained redundancy  
+**Lower compression ratios** (typically 2-5×)  
+**Less flexible** in choosing what to prune  
+**May require more careful tuning** to maintain accuracy  
+**Coarser granularity** means less ability to capture fine-grained redundancy  
 
 ## Comparing All Granularities
 
@@ -274,10 +274,10 @@ Let's summarize the spectrum:
 
 | Granularity | Compression | GPU Speedup | Hardware Requirements | Use Case |
 |-------------|-------------|-------------|----------------------|----------|
-| **Fine-grained** | 9-12× | ❌ None (without custom HW) | Specialized (EIE) | Maximum compression |
-| **Pattern (2:4)** | 2× | ✅ ~1.5-2× | Modern GPUs (A100+) | Balanced approach |
-| **Channel** | 2-5× | ✅ Direct | Any hardware | Production deployment |
-| **Layer** | 2-3× | ✅ Direct | Any hardware | Extreme simplification |
+| **Fine-grained** | 9-12× | None (without custom HW) | Specialized (EIE) | Maximum compression |
+| **Pattern (2:4)** | 2× | ~1.5-2× | Modern GPUs (A100+) | Balanced approach |
+| **Channel** | 2-5× | Direct | Any hardware | Production deployment |
+| **Layer** | 2-3× | Direct | Any hardware | Extreme simplification |
 
 <div align="center">
   <img src="/assets/img/Pruning/pruning_page_28.png" alt="2D weight matrix visualization" />
@@ -325,19 +325,19 @@ Let's see how different granularities affect ResNet-50:
 - Parameters: 2.56M (10×)
 - FLOPs: 4.1B (no reduction)
 - Top-1: 75.8%
-- **GPU speedup: None** ❌
+- **GPU speedup: None**
 
 **2:4 Pattern (50% sparsity):**
 - Parameters: 12.8M (2×)
 - FLOPs: 2.05B (2×)
 - Top-1: 75.5%
-- **GPU speedup: 1.5×** ✅
+- **GPU speedup: 1.5×**
 
 **Channel Pruning (50% channels):**
 - Parameters: 6.4M (4×)
 - FLOPs: 1.03B (4×)
 - Top-1: 73.2%
-- **GPU speedup: 3.8×** ✅
+- **GPU speedup: 3.8×**
 
 ## Key Takeaways
 
@@ -363,6 +363,7 @@ In [Part 3]({% post_url 2025-05-20-Neural-Network-Pruning-Part3-Pruning-Criteria
 - [Part 4: Advanced Techniques]({% post_url 2025-05-25-Neural-Network-Pruning-Part4-Advanced-Techniques %})
 
 **References:**
+- [MIT 6.5940: TinyML and Efficient Deep Learning (Fall 2024)](https://hanlab.mit.edu/courses/2024-fall-65940)
 - [Learning Both Weights and Connections for Efficient Neural Network](https://arxiv.org/abs/1506.02626) (Han et al., NeurIPS 2015)
 - [Exploring the Granularity of Sparsity in CNNs](https://arxiv.org/abs/1701.05369) (Mao et al., CVPR 2017)
 - [Accelerating Inference with Sparsity Using NVIDIA Ampere](https://developer.nvidia.com/blog/accelerating-inference-with-sparsity-using-ampere-and-tensorrt/)

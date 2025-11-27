@@ -119,17 +119,17 @@ Row 1: [1, -5]  →  L2-norm = √(1 + 25) = √26 ≈ 5.10
 ### Pros and Cons
 
 **Advantages:**
-✅ **Extremely simple** to implement (one line of code)  
-✅ **No additional training** or data required  
-✅ **Fast computation** (just sort weights)  
-✅ **Works surprisingly well** in practice  
-✅ **Hardware-agnostic**  
+**Extremely simple** to implement (one line of code)  
+**No additional training** or data required  
+**Fast computation** (just sort weights)  
+**Works surprisingly well** in practice  
+**Hardware-agnostic**  
 
 **Disadvantages:**
-❌ **Ignores activation values** (what if $x_0$ is always near zero?)  
-❌ **Doesn't consider second-order effects**  
-❌ **Assumes magnitude = importance** (not always true)  
-❌ **Sensitive to weight initialization** scale  
+**Ignores activation values** (what if $x_0$ is always near zero?)  
+**Doesn't consider second-order effects**  
+**Assumes magnitude = importance** (not always true)  
+**Sensitive to weight initialization** scale  
 
 ### When to Use It
 
@@ -186,10 +186,10 @@ The $\gamma$ parameters in BN can directly serve as importance indicators.
 
 ```python
 # Before pruning
-Channel 0: γ = 1.17  ✓ Keep
-Channel 1: γ = 0.10  ✗ Prune
-Channel 2: γ = 0.29  ✗ Prune
-Channel 3: γ = 0.82  ✓ Keep
+Channel 0: γ = 1.17  Keep
+Channel 1: γ = 0.10  Prune
+Channel 2: γ = 0.29  Prune
+Channel 3: γ = 0.82  Keep
 
 # After pruning (50% target)
 Network now has 2 channels instead of 4
@@ -198,17 +198,17 @@ Network now has 2 channels instead of 4
 ### Pros and Cons
 
 **Advantages:**
-✅ **End-to-end learnable** importance scores  
-✅ **Leverages existing BN parameters** (no extra overhead)  
-✅ **Considers full training dynamics**  
-✅ **Better than magnitude** for structured pruning  
-✅ **Regularization encourages sparsity** during training  
+**End-to-end learnable** importance scores  
+**Leverages existing BN parameters** (no extra overhead)  
+**Considers full training dynamics**  
+**Better than magnitude** for structured pruning  
+**Regularization encourages sparsity** during training  
 
 **Disadvantages:**
-❌ **Requires retraining** with regularization  
-❌ **Only works for structured pruning** (channels/filters)  
-❌ **Hyperparameter tuning** needed (λ for regularization)  
-❌ **Assumes BN is present** (doesn't work for all architectures)  
+**Requires retraining** with regularization  
+**Only works for structured pruning** (channels/filters)  
+**Hyperparameter tuning** needed (λ for regularization)  
+**Assumes BN is present** (doesn't work for all architectures)  
 
 ### When to Use It
 
@@ -300,16 +300,16 @@ Consider two weights:
 ### Pros and Cons
 
 **Advantages:**
-✅ **Theoretically principled** (minimizes loss increase)  
-✅ **Captures curvature information** (not just magnitude)  
-✅ **Better accuracy** than magnitude-based methods  
-✅ **Considers loss landscape geometry**  
+**Theoretically principled** (minimizes loss increase)  
+**Captures curvature information** (not just magnitude)  
+**Better accuracy** than magnitude-based methods  
+**Considers loss landscape geometry**  
 
 **Disadvantages:**
-❌ **Computationally expensive** (Hessian calculation)  
-❌ **Memory intensive** for large networks  
-❌ **Requires assumptions** that may not hold  
-❌ **Complex implementation**  
+**Computationally expensive** (Hessian calculation)  
+**Memory intensive** for large networks  
+**Requires assumptions** that may not hold  
+**Complex implementation**  
 
 ### When to Use It
 
@@ -353,15 +353,15 @@ $$
 ### Pros and Cons
 
 **Advantages:**
-✅ **Cheaper than second-order** methods  
-✅ **More accurate than pure magnitude**  
-✅ **Considers loss sensitivity**  
-✅ **Easy to implement** with auto-diff  
+**Cheaper than second-order** methods  
+**More accurate than pure magnitude**  
+**Considers loss sensitivity**  
+**Easy to implement** with auto-diff  
 
 **Disadvantages:**
-❌ **Requires forward/backward pass** on data  
-❌ **Can be noisy** (depends on batch)  
-❌ **Not as accurate as second-order**  
+**Requires forward/backward pass** on data  
+**Can be noisy** (depends on batch)  
+**Not as accurate as second-order**  
 
 ## Pruning Criterion #5: Activation-Based Methods
 
@@ -408,17 +408,17 @@ Channel 2: 14/32 zeros → APoZ = 44%  ✗ Prune
 ### Pros and Cons
 
 **Advantages:**
-✅ **Data-driven** (uses actual activations)  
-✅ **No gradient computation** required  
-✅ **Works well for ReLU networks**  
-✅ **Captures runtime behavior**  
-✅ **Simple to implement**  
+**Data-driven** (uses actual activations)  
+**No gradient computation** required  
+**Works well for ReLU networks**  
+**Captures runtime behavior**  
+**Simple to implement**  
 
 **Disadvantages:**
-❌ **Requires forward passes** on calibration data  
-❌ **Specific to ReLU** and similar activations  
-❌ **Can be biased by calibration data** selection  
-❌ **Doesn't work for all activation functions**  
+**Requires forward passes** on calibration data  
+**Specific to ReLU** and similar activations  
+**Can be biased by calibration data** selection  
+**Doesn't work for all activation functions**  
 
 ### When to Use It
 
@@ -476,16 +476,16 @@ Repeat until convergence.
 ### Pros and Cons
 
 **Advantages:**
-✅ **Layer-wise optimization** (computationally efficient)  
-✅ **Principled reconstruction objective**  
-✅ **Works well for structured pruning**  
-✅ **Can combine with other criteria**  
+**Layer-wise optimization** (computationally efficient)  
+**Principled reconstruction objective**  
+**Works well for structured pruning**  
+**Can combine with other criteria**  
 
 **Disadvantages:**
-❌ **Doesn't consider end-to-end loss**  
-❌ **Requires solving optimization** problem  
-❌ **May not preserve final task performance**  
-❌ **More complex implementation**  
+**Doesn't consider end-to-end loss**  
+**Requires solving optimization** problem  
+**May not preserve final task performance**  
+**More complex implementation**  
 
 ## Comparing All Criteria
 
@@ -501,24 +501,24 @@ Repeat until convergence.
 ## Practical Recommendations
 
 ### For Quick Experiments
-✅ Use **magnitude-based** pruning  
-✅ Works 80% of the time  
-✅ Fast to implement and run  
+Use **magnitude-based** pruning  
+Works 80% of the time  
+Fast to implement and run  
 
 ### For Production Deployment
-✅ Use **scaling-based** (BN γ) for channel pruning  
-✅ Fine-tune with L1 regularization  
-✅ Balance accuracy and speed  
+Use **scaling-based** (BN γ) for channel pruning  
+Fine-tune with L1 regularization  
+Balance accuracy and speed  
 
 ### For Research / Maximum Accuracy
-✅ Use **second-order methods** or **gradient-based**  
-✅ Worth the computational cost  
-✅ Combine with iterative pruning  
+Use **second-order methods** or **gradient-based**  
+Worth the computational cost  
+Combine with iterative pruning  
 
 ### For Post-Training Compression
-✅ Use **magnitude** or **activation-based** (APoZ)  
-✅ No need for gradients  
-✅ Works with frozen models  
+Use **magnitude** or **activation-based** (APoZ)  
+No need for gradients  
+Works with frozen models  
 
 ## Key Takeaways
 
@@ -549,6 +549,7 @@ In [Part 4]({% post_url 2025-05-25-Neural-Network-Pruning-Part4-Advanced-Techniq
 - [Part 4: Advanced Techniques]({% post_url 2025-05-25-Neural-Network-Pruning-Part4-Advanced-Techniques %})
 
 **References:**
+- [MIT 6.5940: TinyML and Efficient Deep Learning (Fall 2024)](https://hanlab.mit.edu/courses/2024-fall-65940)
 - [Optimal Brain Damage](https://proceedings.neurips.cc/paper/1989/file/6c9882bbac1c7093bd25041881277658-Paper.pdf) (LeCun et al., NeurIPS 1989)
 - [Learning Both Weights and Connections](https://arxiv.org/abs/1506.02626) (Han et al., NeurIPS 2015)
 - [Learning Efficient CNNs through Network Slimming](https://arxiv.org/abs/1708.06519) (Liu et al., ICCV 2017)
