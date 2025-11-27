@@ -160,23 +160,6 @@ while current_sparsity < target_sparsity:
 3. **Network adapts gradually**: Learns to work with fewer parameters
 4. **Exploration of loss landscape**: Finds better sparse solutions
 
-### The Learning Rate Rewinding Trick
-
-**Key insight:** When fine-tuning, use the same learning rate schedule as initial training.
-
-**Standard fine-tuning:**
-```python
-fine_tune(model, lr=0.001, epochs=5)  # Small LR
-```
-
-**Learning rate rewinding:**
-```python
-# Use LR schedule from original training epoch E
-fine_tune(model, lr_schedule=original_schedule[epoch_E:], epochs=5)
-```
-
-**Why it works:** The network needs the same "learning dynamics" to adapt to pruning.
-
 ### Practical Example: ResNet-50
 
 **One-shot 90% pruning:**
@@ -188,6 +171,8 @@ fine_tune(model, lr_schedule=original_schedule[epoch_E:], epochs=5)
 - Accuracy drop per iteration: ~2%
 - Fine-tuning recovers: 1.5%
 - Cumulative effect: **<1% final loss**
+
+**Looking ahead:** Iterative pruning works remarkably well, but it still assumes we need to train dense first. What if sparse networks could train from scratch? We'll explore this radical idea in Part 5 with the Lottery Ticket Hypothesis.
 
 ## Automated Pruning: AutoML for Compression
 
@@ -295,32 +280,7 @@ scheduler = WarmupScheduler(initial_lr=1e-5, target_lr=1e-2, warmup_epochs=5)
 train(model, epochs=20, scheduler=scheduler)
 ```
 
-### Sparse Training: The Next Level
-
-**Traditional pruning:**
-1. Train dense network
-2. Prune
-3. Fine-tune
-
-**Sparse training:**
-1. Train with sparsity constraint from scratch
-2. No separate pruning step
-
-**Methods:**
-
-**1. Dynamic Sparse Training (DST):**
-- Start with random sparsity
-- During training, prune and regrow connections
-- Final network is sparse
-
-**2. Straight-Through Estimator (STE):**
-- Use binary masks during forward pass
-- Use continuous relaxation during backward pass
-- Enables gradient flow through pruning
-
-**3. Sparse Momentum:**
-- Apply momentum only to active (non-pruned) weights
-- Improves optimization in sparse regime
+**Advanced training techniques** like learning rate rewinding and sparse training from scratch are covered in depth in **[Part 5]({% post_url 2025-06-01-Neural-Network-Pruning-Part5-Lottery-Tickets-and-Beyond %})**.
 
 ### Combining Pruning with Other Techniques
 
@@ -538,39 +498,6 @@ model = tfmot.sparsity.keras.prune_low_magnitude(model, pruning_schedule)
 
 **Solution:** Measure actual inference time on target hardware
 
-## The Future of Pruning
-
-### Emerging Trends
-
-**1. Hardware-Software Co-Design:**
-- Design pruning patterns that match hardware capabilities
-- Example: 2:4 sparsity for Ampere GPUs
-
-**2. Pruning at Scale:**
-- Pruning LLMs (100B+ parameters)
-- SparseGPT: One-shot pruning for GPT-scale models
-- New challenges with transformer architectures
-
-**3. Sparse-to-Sparse Training:**
-- Never train dense models
-- Start sparse, stay sparse
-- Potential for huge efficiency gains
-
-**4. Dynamic Pruning:**
-- Adapt sparsity based on input
-- Different images use different subnetworks
-- Conditional computation
-
-### Open Research Questions
-
-1. **Lottery Ticket Hypothesis:** Do all networks contain sparse subnetworks that train as well as the full network?
-
-2. **Pruning vs. Smaller Architectures:** Is it better to prune a large network or design a small one (like MobileNet)?
-
-3. **Transferability:** Can pruning masks transfer across datasets or tasks?
-
-4. **Theoretical Understanding:** Why do pruned networks maintain accuracy? What's the fundamental limit?
-
 ## Key Takeaways
 
 1. **Layer-wise pruning ratios** outperform uniform pruning
@@ -581,27 +508,28 @@ model = tfmot.sparsity.keras.prune_low_magnitude(model, pruning_schedule)
 6. **Different applications need different strategies** (mobile vs. cloud vs. edge)
 7. **Pruning is production-ready** with hardware support and proven results
 
-## Conclusion: Putting It All Together
+## Conclusion: The Path Forward
 
-Neural network pruning is a powerful tool for making deep learning models efficient:
+We've covered the practical foundations of neural network pruning:
 
-**The Recipe:**
-1. **Train** a dense baseline model
-2. **Analyze** layer sensitivities
-3. **Choose** granularity (structured for speed, fine-grained for compression)
-4. **Select** criterion (magnitude for simplicity, BN scaling for channels)
-5. **Determine** layer-wise pruning ratios
-6. **Prune iteratively** with fine-tuning between steps
-7. **Combine** with quantization for maximum compression
-8. **Validate** on target hardware
+**What We Know:**
+1. **Layer-wise pruning** beats uniform pruning
+2. **Iterative approach** with fine-tuning is essential
+3. **AutoML (AMC)** can automate ratio selection
+4. **Combining techniques** (pruning + quantization) maximizes compression
+5. **Real hardware validation** is critical for deployment
 
-**The Impact:**
+**What This Achieves:**
 - **3-12× model compression**
 - **2-5× inference speedup** (with structured pruning)
 - **50-100× memory reduction** (with pruning + quantization)
-- **Enables deployment** on mobile and edge devices
 
-**Remember:** Pruning is not a magic bullet—it's one tool in the efficient deep learning toolkit. Combine it with other techniques (quantization, distillation, NAS) for maximum impact.
+But this raises deeper questions:
+- **Why does pruning work so well?**
+- **Do we actually need dense networks for training?**
+- **Can we train sparse networks from scratch?**
+
+In **[Part 5]({% post_url 2025-06-01-Neural-Network-Pruning-Part5-Lottery-Tickets-and-Beyond %})**, we'll explore the Lottery Ticket Hypothesis and modern sparse training methods that challenge everything we thought we knew about pruning.
 
 ---
 
@@ -610,14 +538,11 @@ Neural network pruning is a powerful tool for making deep learning models effici
 - [Part 2: Pruning Granularities]({% post_url 2025-05-15-Neural-Network-Pruning-Part2-Pruning-Granularities %})
 - [Part 3: Pruning Criteria]({% post_url 2025-05-20-Neural-Network-Pruning-Part3-Pruning-Criteria %})
 - **Part 4: Advanced Techniques** (Current)
+- [Part 5: Lottery Tickets and Beyond]({% post_url 2025-06-01-Neural-Network-Pruning-Part5-Lottery-Tickets-and-Beyond %})
 
-**Further Resources:**
+**References:**
 - [MIT 6.5940: TinyML and Efficient Deep Learning (Fall 2024)](https://hanlab.mit.edu/courses/2024-fall-65940)
 - [Original Pruning Paper (Han et al., NeurIPS 2015)](https://arxiv.org/abs/1506.02626)
 - [AMC: AutoML for Model Compression](https://arxiv.org/abs/1802.03494)
-- [Lottery Ticket Hypothesis](https://arxiv.org/abs/1803.03635)
-- [SparseGPT: Pruning Large Language Models](https://arxiv.org/abs/2301.00774)
-- [Pruning Publications Repository](https://github.com/mit-han-lab/pruning-sparsity-publications)
-
-**Acknowledgments:**
-This series is based on MIT 6.5940 (TinyML and Efficient Deep Learning) by Song Han and team. Special thanks to the EfficientML.ai community for pioneering this field.
+- [Deep Compression](https://arxiv.org/abs/1510.00149) (Han et al., ICLR 2016)
+- [To Prune, or Not to Prune: Exploring the Efficacy of Pruning](https://arxiv.org/abs/1710.01878)
