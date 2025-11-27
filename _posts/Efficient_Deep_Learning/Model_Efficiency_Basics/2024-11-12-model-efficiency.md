@@ -4,7 +4,7 @@ date : 2024-11-12 14:00:00 +0800
 categories : ["Model Efficiency Basics"]
 tags :  ["Model Efficiency"]
 description: Efficient deep learning computing speeds training, reduces costs, and enhances scalability
-image: /assets/img/three_pillars.png
+image: /assets/img/Efficiency_Metrics/three_pillars.png
 ---
 
 Efficient deep learning computing is critical due to the vast computational resources required for training large models. Without efficient systems, training times would be long, and the cost of resources would become prohibitive, limiting accessibility and scalability.
@@ -28,6 +28,6 @@ The algorithm, or model architecture, defines how a deep learning system process
 # Hardware:
 Efficient hardware is fundamental for deep learning, as training large models requires significant computational power. GPUs, TPUs, and other specialized accelerators enable faster training and inference, reducing the time and resources needed for deep learning tasks.
 
-![Architectural_advances](/assets/img/Architectural_support.png){: width="700" height="400" }{: .center }
+![Architectural_advances](/assets/img/Efficiency_Metrics/Architectural_support.png){: width="700" height="400" }{: .center }
 
-![Architectural_advances](/assets/img/Hardware_cost_distribution_over_size.png){: width="700" height="400" }{: .center }
+![Architectural_advances](/assets/img/Efficiency_Metrics\Hardware_cost_distribution_over_size.png){: width="700" height="400" }{: .center }
