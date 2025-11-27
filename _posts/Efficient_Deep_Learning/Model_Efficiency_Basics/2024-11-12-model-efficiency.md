@@ -30,4 +30,4 @@ Efficient hardware is fundamental for deep learning, as training large models re
 
 ![Architectural_advances](/assets/img/Efficiency_Metrics/Architectural_support.png){: width="700" height="400" }{: .center }
 
-![Architectural_advances](/assets/img/Efficiency_Metrics\Hardware_cost_distribution_over_size.png){: width="700" height="400" }{: .center }
+![Architectural_advances](/assets/img/Efficiency_Metrics/Hardware_cost_distribution_over_size.png){: width="700" height="400" }{: .center }
