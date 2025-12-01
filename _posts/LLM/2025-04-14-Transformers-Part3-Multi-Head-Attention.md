@@ -1,7 +1,7 @@
 ---
 title : "Transformers from Scratch - Part 3: Multi-Head Attention Mechanism"
 date : 2025-04-14 14:00:00 +0800
-categories : ["Transformers", "LLM"]
+categories : ["LLM", "Transformers"]
 tags :  ["Deep Learning", "NLP", "Transformers", "Attention", "Multi-Head Attention"]
 math: true
 ---

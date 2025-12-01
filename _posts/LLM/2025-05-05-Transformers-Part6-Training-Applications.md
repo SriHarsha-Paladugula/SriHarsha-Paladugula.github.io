@@ -1,7 +1,7 @@
 ---
 title : "Transformers from Scratch - Part 6: Training and Applications"
 date : 2025-05-05 14:00:00 +0800
-categories : ["Transformers", "LLM"]
+categories : ["LLM", "Transformers"]
 tags :  ["Deep Learning", "NLP", "Transformers", "Training", "Applications"]
 math: true
 ---

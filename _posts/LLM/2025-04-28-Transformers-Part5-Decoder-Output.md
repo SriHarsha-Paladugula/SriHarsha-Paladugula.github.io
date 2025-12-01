@@ -1,7 +1,7 @@
 ---
 title : "Transformers from Scratch - Part 5: The Decoder and Output Generation"
 date : 2025-04-28 14:00:00 +0800
-categories : ["Transformers", "LLM"]
+categories : ["LLM", "Transformers"]
 tags :  ["Deep Learning", "NLP", "Transformers", "Decoder", "Cross-Attention"]
 math: true
 ---

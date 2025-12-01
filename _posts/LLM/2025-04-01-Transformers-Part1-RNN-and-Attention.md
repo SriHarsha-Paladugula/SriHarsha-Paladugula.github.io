@@ -1,7 +1,7 @@
 ---
 title : "Transformers from Scratch - Part 1: From RNNs to Attention"
 date : 2025-04-01 14:00:00 +0800
-categories : ["Transformers", "LLM"]
+categories : ["LLM", "Transformers"]
 tags :  ["Deep Learning", "NLP", "Transformers", "RNN", "Attention"]
 math: true
 ---

@@ -1,7 +1,7 @@
 ---
 title : "Transformers from Scratch - Part 4: Layer Norm and Feed-Forward Networks"
 date : 2025-04-21 14:00:00 +0800
-categories : ["Transformers", "LLM"]
+categories : ["LLM", "Transformers"]
 tags :  ["Deep Learning", "NLP", "Transformers", "Layer Normalization", "Feed Forward"]
 math: true
 ---
