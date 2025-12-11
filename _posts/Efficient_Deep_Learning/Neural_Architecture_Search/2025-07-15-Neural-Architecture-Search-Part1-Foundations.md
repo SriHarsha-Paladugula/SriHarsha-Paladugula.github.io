@@ -1,7 +1,7 @@
 ---
 title: "Neural Architecture Search Part 1: Foundations and Building Blocks"
 date: 2025-07-15
-categories: [Efficient_Deep_Learning, Architecture_Design]
+categories: [Efficient Deep Learning, Architecture Design]
 tags: [NAS, neural-architecture-search, deep-learning, model-architecture, building-blocks]
 pin: false
 ---

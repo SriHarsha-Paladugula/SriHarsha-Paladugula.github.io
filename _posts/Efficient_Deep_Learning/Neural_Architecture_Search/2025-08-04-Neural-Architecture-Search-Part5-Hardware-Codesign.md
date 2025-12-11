@@ -1,7 +1,7 @@
 ---
 title: "Neural Architecture Search Part 5: Hardware-Aware NAS and Co-Design"
 date: 2025-08-04
-categories: [Efficient_Deep_Learning, Architecture_Design]
+categories: [Efficient Deep Learning, Architecture Design]
 tags: [NAS, hardware-aware, co-design, specialization, latency-aware]
 pin: false
 ---

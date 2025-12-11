@@ -1,7 +1,7 @@
 ---
 title: "Neural Architecture Search Part 3: Applications and Real-World Impact"
 date: 2025-07-25
-categories: [Efficient_Deep_Learning, Architecture_Design]
+categories: [Efficient Deep Learning, Architecture Design]
 tags: [NAS, applications, EfficientNet, MobileNet, real-world-deployment, practical-ai]
 pin: false
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Neural Architecture Search Part 2: Search Spaces and Strategies"
 date: 2025-07-20
-categories: [Efficient_Deep_Learning, Architecture_Design]
+categories: [Efficient Deep Learning, Architecture Design]
 tags: [NAS, neural-architecture-search, search-space, optimization, deep-learning]
 pin: false
 ---

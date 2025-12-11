@@ -1,7 +1,7 @@
 ---
 title: "Neural Architecture Search Part 4: Efficient Estimation Strategies"
 date: 2025-07-30
-categories: [Efficient_Deep_Learning, Architecture_Design]
+categories: [Efficient Deep Learning, Architecture Design]
 tags: [NAS, efficiency-estimation, weight-sharing, hypernetworks, training-cost]
 pin: false
 ---
