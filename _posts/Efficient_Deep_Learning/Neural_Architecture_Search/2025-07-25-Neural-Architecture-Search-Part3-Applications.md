@@ -217,11 +217,11 @@ The democratization of neural architecture design through automation is one of t
 ---
 
 **Series Navigation:**
-- **Part 1**: [Foundations and Building Blocks](/posts/neural-architecture-search-part1-foundations-and-building-blocks/)
-- **Part 2**: [Search Spaces and Strategies](/posts/neural-architecture-search-part2-search-spaces-and-strategies/)
+- [Part 1: Foundations and Building Blocks]({% post_url 2025-07-15-Neural-Architecture-Search-Part1-Foundations %})
+- [Part 2: Search Spaces and Strategies]({% post_url 2025-07-20-Neural-Architecture-Search-Part2-Search-Strategies %})
 - **Part 3**: Applications and Real-World Impact (this post)
-- **Part 4**: [Efficient Estimation Strategies](/posts/neural-architecture-search-part4-efficient-estimation-strategies/)
-- **Part 5**: [Hardware-Aware NAS and Co-Design](/posts/neural-architecture-search-part5-hardware-aware-nas-and-co-design/)
+- [Part 4: Efficient Estimation Strategies]({% post_url 2025-07-30-Neural-Architecture-Search-Part4-Efficient-Estimation %})
+- [Part 5: Hardware-Aware NAS and Co-Design]({% post_url 2025-08-04-Neural-Architecture-Search-Part5-Hardware-Codesign %})
 
 ---
 

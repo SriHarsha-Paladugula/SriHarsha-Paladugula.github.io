@@ -319,10 +319,10 @@ Hardware-aware NAS represents the future of deep learning deployment: AI systems
 ---
 
 **Series Navigation:**
-- **Part 1**: [Foundations and Building Blocks](/posts/neural-architecture-search-part1-foundations-and-building-blocks/)
-- **Part 2**: [Search Spaces and Strategies](/posts/neural-architecture-search-part2-search-spaces-and-strategies/)
-- **Part 3**: [Applications and Real-World Impact](/posts/neural-architecture-search-part3-applications-and-real-world-impact/)
-- **Part 4**: [Efficient Estimation Strategies](/posts/neural-architecture-search-part4-efficient-estimation-strategies/)
+- [Part 1: Foundations and Building Blocks]({% post_url 2025-07-15-Neural-Architecture-Search-Part1-Foundations %})
+- [Part 2: Search Spaces and Strategies]({% post_url 2025-07-20-Neural-Architecture-Search-Part2-Search-Strategies %})
+- [Part 3: Applications and Real-World Impact]({% post_url 2025-07-25-Neural-Architecture-Search-Part3-Applications %})
+- [Part 4: Efficient Estimation Strategies]({% post_url 2025-07-30-Neural-Architecture-Search-Part4-Efficient-Estimation %})
 - **Part 5**: Hardware-Aware NAS and Co-Design (this post)
 
 ---
