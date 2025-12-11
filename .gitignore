@@ -25,3 +25,8 @@ package-lock.json
 # Misc
 _sass/dist
 assets/js/dist
+
+# agents related files
+copilot-instructions.md
+blog_creation_prompts.md
+blog_agent_instructions/*
